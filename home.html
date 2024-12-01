@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskmaster</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>; "
+    <div class="container">
+            <h1 style="color: white; text-align: center;">Task Master</h1>
+       
+        <div class="task-form">
+            <input type="text" id="task-title" placeholder="Task Title" required>
+            <textarea id="task-description" placeholder="Task Description" required></textarea>
+            <input type="date" id="task-deadline" required>
+            <select id="task-priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button id="add-task">Add Task</button>
+        </div>
+       <div class="Search-filter">
+        <input type="text" id="search-bar" placeholder="Search tasks...">
+       </div>
+       <div class="Search-filter">
+        <select class="task-form" id="filter-priority">
+            <option value="">Filter by Priority</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+       </div>
+       <a href="login.html">
+        <button>Logout</button>
+    </a>
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+</html>
